@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	.container{
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.signupdetails form{
+		display: flex;
+		flex-direction: column;
+	}
+	.signupdetails form input{
+		border:none;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+		font-size: 20px;		
+
+	}
+	.buttons-signupform {
+		display:flex;
+		width: 250px;
+	}
+		.buttons-signupform input {
+			margin: 20px;	
+			padding: 5px 10px;		
+		}
+
+</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="heading">
+			SIGNUP
+		</h1>
+	<div class="signupdetails">
+	<form>
+		<input type="text" name="Firstname" placeholder="first name" >
+	 	<input type="email" name="email-id" placeholder= "email-id">
+		<input  id="password" type="password" name="password" placeholder="password">
+		<input id="confirm_password" type="rewrite-password" name="re-type password" placeholder="re-type password">
+		<span id='message'></span>
+	  <div class="buttons-signup">
+			<input type="submit" name="login" value="login" >
+			<input type="button" name="signup" value="signup">
+		</div>
+	</form>
+	<p>
+			forgotten <a href="#">password?</a>
+		</p>
+</div>
+</div>
+ <script type="text/javascript">
+		$('#password, #confirm_password').on('keyup', function () {
+  if ($('#password').val() == $('#confirm_password').val()) {
+    $('#message').html('Matching').css('color', 'green');
+  } else 
+    $('#message').html('Not Matching').css('color', 'red');
+});
+	</script>
+
+</body>
+</html>

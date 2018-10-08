@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<style type="text/css">
+	body{
+		margin:0;
+	}
+	a:hover {
+		color: orange !important;
+	}
+	a {
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.company-details {
+		display: flex;
+		padding: 30px;
+		align-items: center;
+	}
+	.company-details h3 {
+		padding-left: 20px;
+		text-transform: capitalize;
+		font-size: 26px;
+	}
+	.parent{
+		display: flex;
+		padding: 30px 0;
+	}
+	.parent > *{
+		width: calc(100% / 3 - 10px );
+		padding:0 5px;
+		text-align: center;
+		background-color:#D3FCFC;
+		border: 1px solid;
+		border-radius: 50%;
+	}
+	.parent .child img {
+		width: 300px;
+		height:300px;
+		object-fit: cover;
+		border-radius: 50%;
+		padding: 30px 0;
+	}
+
+	.header {
+		display: flex;
+		background-color:#E8F2F0;
+		height: 120px;
+		align-items: center;
+		padding: 0 5%;
+	}
+	.header div {
+		width: 50%;
+	}
+	.header div ul {
+		list-style-type: none;
+		display: flex;
+		padding: 0;
+	}
+	.rightmenu ul {
+		float: right;
+	}
+	.header div ul li {
+		padding: 10px 20px;
+		margin: 0 10px;
+		background-color: lightblue;
+		border-radius: 25px;
+
+	}
+	.header div ul li a {
+		color: white;
+		text-decoration: none;
+	}
+	
+
+	.block {
+		border:1px solid blue;
+		text-align: center;
+		margin: 0 10px;
+		width: calc(100% / 3 - 10px);
+		background-color: bisque;
+		padding: 20px;
+	}
+	.block h2{
+		text-transform: capitalize;
+	}
+	.block p {
+		height: 100px;
+	}
+	.header1 {
+		display: flex;
+		padding: 50px;
+		border: 1px solid red;
+	}
+	.block a {
+		display: inline-block;
+		margin: 10px;
+		padding: 10px 20px;
+		background-color:#92ADA8;
+		text-decoration: none;
+		color:white;
+		border-radius: 50%;
+		text-transform: uppercase;
+	}
+.footer-block{
+	display: flex;
+	align-items: center;
+	background-color: #f3f3f3;
+	padding: 40px;
+}
+.footer-block ul{
+	list-style-type: none;
+}
+.footer-block-content{
+width: 25%;
+
+}
+.footer-block ul li{
+	padding: 10px;
+
+}
+.footer-block ul li a {
+	text-decoration: none;
+}
+
+
+</style>
+</head>
+
+
+<body>
+<div class="header-class">
+	<div class="company-details">
+		<div class="company-logo">
+			<img src="main-logo.png" alt="Sandy" width="70px" height="70px">
+		</div>
+		<h3>DESKTOP REPAIRS & SOLUTIONS</h3>
+	</div>
+<header>
+	<div class="header">
+		<div class="leftmenu">
+			<ul>
+				<li><a href="#">home</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="form.html">contact</a></li>
+				<li><a href="#">services</a></li>
+			</ul>	
+		</div>
+		<div class="rightmenu">
+			<ul>
+				<li><a href="loginform.html">login</a></li>
+				<li><a href="signup.html">signup</a></li>
+			</ul>
+		</div>
+ 	</div>
+</header>
+</div>
+<div class="parent">
+	<div class="child">
+		<img src="image1.jpg" alt="text">
+	</div>
+	<div class="child">
+		<img src="image2.jpg" alt="text">
+	</div>
+	<div class="child">
+		<img src="image3.jpg" alt="text">
+	</div>
+</div>
+
+<!-- <div class="container">
+		<h1 class="heading">
+			SIGNUP
+		</h1>
+	<div class="signupdetails">
+	<form>
+				<input type="text" name="Firstname" placeholder="first name" >
+	 	<input type="email" name="email-id" placeholder= "email-id">
+		<input type="password" name="password" placeholder="password">
+				<input type="rewrite-password" name="re-type password" placeholder="re-type password">
+
+	  <div class="buttons-signup">
+			<input type="submit" name="login" value="login" >
+			<input type="button" name="signup" value="signup">
+		</div> -->
+<!-- 	</form>
+	<p>
+			forgotten <a href="#">password?</a>
+		</p>
+</div>
+</div>
+ -->
+
+<div class="header1">
+	<div class="block1 block">
+		<h2>what is troubleshootin</h2>
+		<p>Troubleshooting or dépanneuring is a form of problem solving, often applied to repair failed products or processes on a machine or a system. It is a logical, systematic search for the source of a problem in order to solve it,</p>
+		<div class="image-block">
+		<img src="troubleshoot.png" width="200px" height="200px">
+	</div>
+		<a href="https://en.wikipedia.org/wiki/Troubleshooting">troubleshoot</a>
+	</div>
+	<div class="block2 block">
+<h2>internet service provider</h2>
+<p>An Internet service provider (ISP) is an organization that provides services for accessing, using, or participating in the Internet. Internet service providers may be organized in various forms, such as commercial, community-owned, </p>
+		<div class="image-block">
+<img src="isp.png" width="200px" height="200px">
+</div>
+<a href="https://en.wikipedia.org/wiki/Internet_service_provider">ISP</a>
+</div>
+<div class="block3 block">
+	<h2>connectivity issues</h2>
+	<p>Connectivity issue is a very common definition and may encompass many problems. However, in our case the most common definition is: unexpected network failure at one of our upstream network providers that affects the connectivity to your host server.</p>	
+			<div class="image-block">
+	<img src="issue.png" width="200px" height="200px">
+</div>
+	<a href="https://help.netflix.com/en/node/85">ISSUES</a>
+</div>
+</div>
+<footer>
+	<div class="footer-block">
+		<div class="footer-block-1 footer-block-content">
+			<ul >
+				<li>
+					<a href="#"> privacy policy </a>
+				</li>
+				<li>
+					<a href="#"> cookies </a>
+				</li>
+				<li>
+					<a href="#"> terms and conditions </a>
+				</li>
+				<li>
+					<a href="#"> company policy </a>
+				</li>
+			</ul>
+
+		</div>
+		<div class="footer-block-2 footer-block-content">
+			<ul>
+				<li>
+					<a href="#"> about company</a>
+				</li>
+				<li>
+					<a href="#"> contact us </a>
+				</li>
+			</ul>
+
+		</div>
+		<div class="footer-block-3 footer-block-content">
+			<ul>
+				<li>
+					<a href="#"> block 1  </a>
+				</li>
+				<li>
+					<a href="#"> block 2 </a>
+				</li>
+				<li>
+					<a href="#"> block 3  </a>
+				</li>
+				<li>
+					<a href="#"> block 4 </a>
+				</li>
+			</ul>
+
+
+		</div>
+		<div class="footer-block-4 footer-block-content">
+			<ul>
+			<li>
+					<a href="#"> 
+						<img src="linkedin.png" width="30px" height="30px">
+
+					 </a>
+				</li>
+				<li>
+					<a href="#"> 
+						<img src="twitter.png" width="30px" height="30px">
+					  </a>
+				</li>
+			</ul>
+
+		</div>
+		
+	</div>
+
+</footer>
+
+</body>
+</html>

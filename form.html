@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.contact-us {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.contact-details-values form{
+		display: flex;
+		flex-direction: column;
+	}
+		.contact-details-values form input{
+			border:none;
+			border-bottom: 1px solid black;
+			margin-bottom: 20px;
+			font-size: 22px;
+		}
+		.contact-details-values form div {
+			display: flex;
+		}
+		.contact-details-values form p {
+			margin: 0;
+		}
+		.contact-details-values {
+			border: 1px solid black;
+			padding: 30px;
+		}
+		.contact-details-values form input[type="submit"] {
+			border: none;
+			max-width: 250px;
+			padding: 10px 30px;
+			margin: 0 auto;
+			border-radius: 10px;
+		}
+
+	</style>
+</head>
+<body>
+<div class="contact-us">
+	<h1 class="contact-heading">
+		Contact Us 
+	</h1>
+	<div class="contact-details">
+		<h3>Fillup your details</h3>
+		<div class="contact-details-values">
+			
+			<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+				<input type="text" name="firstname" placeholder="FirstName" required pattern="^[a-zA-z0-9$]*">
+				<input type="text" name="secondname" placeholder="Second Name" required pattern="^[a-zA-z]*">
+				<input type="email" name="email" placeholder="abc@info.com" required>
+				<input type="number" name="phonenumber" placeholder="9XXXXXXXXXXX" required min="12">
+				<div class="radio-block">
+					<label>Gender:</label>
+					<input type="radio" name="gender" class="radio-buttons" required>
+					<label>Male</label>
+					<input type="radio" name="gender" class="radio-buttons" required>
+					<label>Female</label>
+				</div>
+				<div class="terms-conditions">
+					<input type="checkbox" name="check" required>
+					<p> I Agree terms and contions </p>
+				</div>
+				<div class="accept-policy">
+					<input type="checkbox" name="check" required>	
+					<p>By accepting company policy </p>			
+				</div>
+				<input type="submit" name="submit" value="submit">
+			</form>
+		</div>
+	</div>
+</div>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        document.getElementById("demo").innerHTML = "*";
+        document.getElementById("fname1").style.border = "1px solid red";
+        document.getElementById("demo").style.color = "red";
+        return false;
+    }
+}
+</script>
+</body>
+</html>

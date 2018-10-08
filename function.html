@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+</head>
+<body>
+<input type="text" id="text1" value="20">
+<input type="text" id="text2" value="10">
+<input type="button" id="btn" value="ADD" onclick="add()" >
+<input type="button" id="btn" value="SUB" onclick="substract()">
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script type="text/javascript">
+	function add()
+	{
+		var a = document.getElementById("text1").value;
+		var b = document.getElementById("text2").value;
+		var c =  parseInt(a)+ parseInt(b);
+		document.getElementById("demo1").innerHTML = c;
+	}
+	function substract() 
+	{
+		var d = document.getElementById("text1").value;
+		var e = document.getElementById("text2").value;
+		var f = d - e ;
+		document.getElementById("demo2").innerHTML = f ;
+	}
+</script>
+</body>
+</html>
