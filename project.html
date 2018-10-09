@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>Demo</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css"">
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider-min.js"></script>
 	<style type="text/css">
 	body{
 		margin:0;
@@ -67,6 +71,8 @@
 		margin: 0 10px;
 		background-color: lightblue;
 		border-radius: 25px;
+		height: 20px;
+		z-index: 9999;
 
 	}
 	.header div ul li a {
@@ -125,7 +131,13 @@ width: 25%;
 	text-decoration: none;
 }
 
-
+.header div ul li .sub-menu {
+	display: none;
+}
+.header div ul li:hover .sub-menu {
+	display: block;
+	height: auto;
+}
 </style>
 </head>
 
@@ -145,7 +157,15 @@ width: 25%;
 				<li><a href="#">home</a></li>
 				<li><a href="about.html">about</a></li>
 				<li><a href="form.html">contact</a></li>
-				<li><a href="#">services</a></li>
+				<li>
+					<a href="#">services</a>
+					<ul class="sub-menu">
+						<li><a href="#">services1</a></li>
+						<li><a href="#">services1</a></li>
+						<li><a href="#">services1</a></li>
+						<li><a href="#">services1</a></li>
+					</ul>
+				</li>
 			</ul>	
 		</div>
 		<div class="rightmenu">
@@ -218,6 +238,24 @@ width: 25%;
 	<a href="https://help.netflix.com/en/node/85">ISSUES</a>
 </div>
 </div>
+
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="image4.jpg" />
+    </li>
+    <li>
+      <img src="image5.jpg" />
+    </li>
+    <li>
+      <img src="image6.jpg" />
+    </li>
+    <li>
+      <img src="image7.jpg" />
+    </li>
+  </ul>
+</div>
+
 <footer>
 	<div class="footer-block">
 		<div class="footer-block-1 footer-block-content">
@@ -286,6 +324,15 @@ width: 25%;
 	</div>
 
 </footer>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+</script> 
+
 
 </body>
 </html>
